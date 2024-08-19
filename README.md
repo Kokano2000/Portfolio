@@ -41,7 +41,8 @@
 
 1. #### 努力点及び直面した課題
 
-    1. Spaceキーでカメラを自機中心にリセットする時にキャラクターの中心が画面の下辺中央に来てしまい、  
+    1. [CameraControl.cs](Assets/Resources/Concretes/CameraControl.cs)にて  
+    Spaceキーでカメラを自機中心にリセットする時にキャラクターの中心が画面の下辺中央に来てしまい、  
     手前側の視野が確保できない  
     →下記のようにz軸をずらすことで対処した  
     `private void CameraReset()
@@ -50,7 +51,8 @@
             transform.position = new Vector3(player.transform.position.x, transform.position.y, player.transform.position.z - transform.position.y / 1.5f);
         }
     }`
-    1. クリック位置と自機が移動する地点にずれが生じる。  
+    1. [MouseControl.cs](Assets/Resources/Concretes/MouseControl.cs)にて  
+    クリック位置と自機が移動する地点にずれが生じる。  
     →カーソル座標に自機を移動させる仕組みにしていたが、カメラが傾斜している関係上、画面上のカーソルの位置とゲーム内のカーソルのy軸の位置が異なる為と判明した  
     →下記のようにカメラから画面上のカーソル位置に線を投射し、地面レイヤーのオブジェクトに命中した点に向かって移動するようにした  
     ```
@@ -67,5 +69,6 @@
         return result;
     }
     ```
+    
 
 1. #### おわりに    
