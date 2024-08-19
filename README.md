@@ -14,10 +14,9 @@
 
 1. #### 学習内容及び期間
 
-    |header1|header2|header3|
-    |:--|--:|:--:|
-    |align left|align right|align center|
-    |a|b|c|
+    |言語|期間|方法|
+    |:--:|:--:|:--:|
+    |C#|2ヵ月|参考書|
 
 2. #### 動作内容
 
