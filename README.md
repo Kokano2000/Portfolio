@@ -1,1 +1,2 @@
-C:\Users\wassa\Unity\Portfolio 
+# C#学習のポートフォリオ
+###### 岡野　倭也
